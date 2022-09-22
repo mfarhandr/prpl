@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>E-Voting</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid" style="background-color:#0A64BC ;">
+        <div class="row align-items-center py-3 px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <h1 class="m-0 display-5 font-weight-semi-bold" style="color:white ;">E-Voting</h1>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+    
+    <!-- Warning Start -->
+    <div class="container-fluid pt-5">
+            <div class="row px-xl-5 pb-3">
+            <div class="col-lg-4 col-md-6 pb-1" style="margin-left: 450px;">
+                <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
+                    <img class="img-fluid" src="https://assets.stickpng.com/images/5a81af7d9123fa7bcc9b0793.png" alt="" style="width:65%; margin-left: 70px;">
+                    <h5 class="font-weight-semi-bold m-0" style="text-align: center ;">Apakah anda yakin dengan pilihan anda?</h5>
+                </div>
+            </div>
+        </div>
+        <input type="button" class="btn btn-primary" onclick="myFunction()" value="Ya, Saya Yakin" style="margin-left: 400px; width: 10%; height: 50%;">
+        <button type="button" class="btn btn-secondary" onclick="history.back()" style="margin-left: 350px;">Tidak, Kembali</button>
+    </div>
+    <!-- Warning End -->
+
+    <script>
+        function myFunction() {
+          document.getElementById("myForm").submit();
+        }
+        </script>
+</body>
